@@ -12,14 +12,14 @@ spec:
   ports:
   - name: preds
     port: {{ .Values.torchserve.inference_port }}
-    targetPort: ts 
+    targetPort: ts
   - name: mdl
     port: {{ .Values.torchserve.management_port }}
     targetPort: ts-management
   - name: metrics
     port: {{ .Values.torchserve.metrics_port }}
     targetPort: ts-metrics
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: torchserve
 ---

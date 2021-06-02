@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CLUSTER_NAME=TorchserveCluster
+CLUSTER_NAME=torchx-dev
 MOUNT_TARGET_GROUP_NAME="eks-efs-group"
 
 # Fetch VPC ID / CIDR Block for the EKS Cluster
